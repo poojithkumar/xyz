@@ -1,0 +1,602 @@
+Running 'npm install --ignore-scripts --https-proxy=http://web-proxy.eu.softwaregrp.net:8080 --proxy=http://web-proxy.eu.softwaregrp.net:8080' in C:\opt\Hygieia-master\UI
+
+
+collectors building
+ 
+https://medium.com/@prashant.parekh/how-to-build-a-collector-for-hygieia-open-source-devops-project-dfe27e0217c3 
+systemctl enable mongod.service
+
+
+export JAVA_HOME=/workspace/jdk1.8.0_201
+export PATH=${JAVA_HOME}/bin:${PATH}
+export M2_HOME=/workspace/apache-maven-3.6.0
+export PATH=${M2_HOME}/bin:${PATH}
+export NODE_HOME=/workspace/.nvm/versions/node/v8.9.1
+export PATH=${NODE_HOME}/bin:${PATH}
+export http_proxy=http://web-proxy.in.softwaregrp.net:8080
+export https_proxy=http://web-proxy.in.softwaregrp.net:8080
+
+
+
+
+
+kill the port 
+kill -9 $(lsof -t -i:8080)
+
+
+
+
+mongod --dbpath=/workspace/data/db
+
+cd /workspace/opt1/hygieia/api/target
+java -jar api.jar --spring.config.location=/workspace/opt1/hygieia/api/application.properties -Djasypt.encryptor.password=hygieiasecret
+
+java -jar jenkins-build-collector-3.0.1.jar  --spring.config.name=jenkins --spring.config.location=/workspace/opt1/hygieia/collectors/build/jenkins/target/application.properties
+java -jar  github-scm-collector-3.0.1.jar  --spring.config.name=github --spring.config.location=/workspace/opt1/hygieia/collectors/scm/github/target/application.properties
+8090  jenkins
+
+mvn clean install package -DskipTests
+
+github 2e8e988ded04273bad3eed23c13a35dfebce0ba3
+chown -R username directory
+chmod -R u+rX directory
+
+gitglob b48b33cbcca14f7125f8165dd303580bac80c4d6
+
+poojith-hygeiya.hpeswlab.net
+root
+2the#moon
+
+922625d82d19e5ede577bbe6447b250aaaf733e7
+
+2387200ba6f599fe0ea50dc6ae68c12d12000ea6 
+2387200ba6f599fe0ea50dc6ae68c12d12000ea6
+ 431*
+  432  echo $M2_HOME
+  433  env
+  434  ls -ltr /workspace/apache-maven-3.6.0
+  435  du -sk /workspace/apache-maven-3.6.0
+  436  df -k /workspace/apache-maven-3.6.0
+  437  pwd
+  438  cd
+  439  ls -latr
+  440  cd .m2
+  441  ls -ltr
+  442  cd ..
+  443  ls -ltr
+  444  rm -rf .m2
+  445  ln -s /workspace/.m2 ./.m2
+  446  ls -ltr
+  447  ls -latr
+  448  cd .m2
+  449  rm -rf .m2
+  450  mkdir -p /workspace/.m2
+  451  ln -s /workspace/.m2 ./.m2
+  452  cd .m2
+  453  cd ..
+  454  df -k .
+  455  cd -
+  456  cd /workspace/
+  457  ls
+  458  cd opt/hygieia
+  459  ls -ltr
+  460  mvn clean install package
+  461  cd ..
+  462  cd hygieia-core
+  463  mvn clean
+  464  mvn clean install package
+  465  history
+
+
+
+
+
+
+
+Running 'gulp build' in C:\opt\Hygieia-master\UI
+
+[INFO] Please note that,
+[INFO]     devops-dashboard depends on lodash#~2.4.1 which resolved to lodash#2.4.2
+[INFO]     gridstack#0.2.6 depends on lodash#>= 4.14.2 which resolved to lodash#4.17.11
+[INFO] Resort to using lodash#>= 4.14.2 which resolved to lodash#4.17.11
+[INFO] Code incompatibilities may occur.
+[INFO]
+[ERROR] bower angular                  extra-resolution Unnecessary resolution: angular#~1.5.9
+[ERROR] bower chartist                 extra-resolution Unnecessary resolution: chartist#~0.9.5
+
+ch   poojith:poojith add
+export http_proxy=http://web-proxy.in.softwaregrp.net:8080
+C:\Users\Phegde>cd C:\Program Files\MongoDB\Server\4.0\bin
+c/opt/hygieia-master/collectors/build/jenkins/target
+ bower --allow-root install
+export M2_HOME=/root/apache-maven-3.6.0
+export PATH=${M2_HOME}/bin:${PATH}
+export JAVA_HOME=/root/opt/jdk1.8.0_201
+export PATH=${JAVA_HOME}/bin:${PATH}
+vi initialize_env.sh
+sh initialize_env.sh
+
+
+
+
+ gulp serve
+
+
+java -jar api.jar --spring.config.location=C:\opt\Hygieia-master\api\dashboard.properties -Djasypt.encryptor.password=hygieiasecret
+
+
+
+
+
+
+
+login as: root
+root@poojith-hygeiya.hpeswlab.net's password:
+Last login: Mon Oct 29 06:14:01 2018 from 10.30.4.27
+[root@poojith-hygeiya ~]# java --version
+Unrecognized option: --version
+Error: Could not create the Java Virtual Machine.
+Error: A fatal exception has occurred. Program will exit.
+[root@poojith-hygeiya ~]# java -V
+Unrecognized option: -V
+Error: Could not create the Java Virtual Machine.
+Error: A fatal exception has occurred. Program will exit.
+[root@poojith-hygeiya ~]# whoami
+root
+[root@poojith-hygeiya ~]# version
+bash: version: command not found...
+[root@poojith-hygeiya ~]# sudo apt-add-repository ppa:webupd8team/java
+sudo: apt-add-repository: command not found
+[root@poojith-hygeiya ~]# sudo add-apt-repository ppa:webupd8team/java
+sudo: add-apt-repository: command not found
+[root@poojith-hygeiya ~]# apt-get update
+bash: apt-get: command not found...
+[root@poojith-hygeiya ~]# sudo apt-get install git
+sudo: apt-get: command not found
+[root@poojith-hygeiya ~]# java -version
+openjdk version "1.8.0_191"
+OpenJDK Runtime Environment (build 1.8.0_191-b12)
+OpenJDK 64-Bit Server VM (build 25.191-b12, mixed mode)
+[root@poojith-hygeiya ~]# mongod -version
+bash: mongod: command not found...
+[root@poojith-hygeiya ~]# wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenki                                                                             ns-ci.org/redhat/jenkins.repo
+--2019-02-13 02:46:31--  http://pkg.jenkins-ci.org/redhat/jenkins.repo
+Resolving pkg.jenkins-ci.org (pkg.jenkins-ci.org)... 52.202.51.185
+Connecting to pkg.jenkins-ci.org (pkg.jenkins-ci.org)|52.202.51.185|:80... conne                                                                             cted.
+HTTP request sent, awaiting response... 200 OK
+Length: 2396 (2.3K) [text/html]
+Saving to: ‘/etc/yum.repos.d/jenkins.repo’
+
+100%[======================================>] 2,396       --.-K/s   in 0s
+
+2019-02-13 02:46:31 (153 MB/s) - ‘/etc/yum.repos.d/jenkins.repo’ saved [2396/239                                                                             6]
+
+[root@poojith-hygeiya ~]# systemctl start jenkins
+Failed to start jenkins.service: Unit not found.
+[root@poojith-hygeiya ~]# rpm --import https://jenkins-ci.org/redhat/jenkins-ci.                                                                             org.key
+curl: (35) Peer received a valid certificate, but access was denied.
+error: https://jenkins-ci.org/redhat/jenkins-ci.org.key: import read failed(2).
+[root@poojith-hygeiya ~]# yum install jenkins -y
+Loaded plugins: fastestmirror, langpacks, product-id, search-disabled-repos,
+              : subscription-manager
+This system is not registered with an entitlement server. You can use subscripti                                                                             on-manager to register.
+
+
+File contains no section headers.
+file: file:///etc/yum.repos.d/jenkins.repo, line: 1
+'<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">\n'
+[root@poojith-hygeiya ~]# systemctl status jenkins
+Unit jenkins.service could not be found.
+[root@poojith-hygeiya ~]# mongo
+bash: mongo: command not found...
+[root@poojith-hygeiya ~]# java -version
+openjdk version "1.8.0_191"
+OpenJDK Runtime Environment (build 1.8.0_191-b12)
+OpenJDK 64-Bit Server VM (build 25.191-b12, mixed mode)
+[root@poojith-hygeiya ~]# mongod -version
+bash: mongod: command not found...
+[root@poojith-hygeiya ~]# mongo -version
+bash: mongo: command not found...
+[root@poojith-hygeiya ~]# rpm -qa | grep -i jenkins
+[root@poojith-hygeiya ~]# cat /etc/re
+redhat-lsb/        redhat-release     request-key.conf   request-key.d/     resolv.2017_09_18  resolv.conf
+[root@poojith-hygeiya ~]# cat /etc/re
+redhat-lsb/        redhat-release     request-key.conf   request-key.d/     resolv.2017_09_18  resolv.conf
+[root@poojith-hygeiya ~]# cat /etc/redhat-release
+CentOS Linux release 7.5.1804 (Core)
+[root@poojith-hygeiya ~]# export HTTP_PROXY=http://web-proxy.in.softwaregrp.net:8080
+[root@poojith-hygeiya ~]# export HTTPS_PROXY=http://web-proxy.in.softwaregrp.net:8080
+[root@poojith-hygeiya ~]# export ftp__PROXY=http://web-proxy.in.softwaregrp.net:8080
+[root@poojith-hygeiya ~]# wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins.io/redhat-stable/jenkins.repo
+--2019-02-13 03:00:23--  http://pkg.jenkins.io/redhat-stable/jenkins.repo
+Resolving pkg.jenkins.io (pkg.jenkins.io)... 52.202.51.185
+Connecting to pkg.jenkins.io (pkg.jenkins.io)|52.202.51.185|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2383 (2.3K) [text/html]
+Saving to: ‘/etc/yum.repos.d/jenkins.repo’
+
+100%[===================================================================================================================>] 2,383       --.-K/s   in 0s
+
+2019-02-13 03:00:24 (147 MB/s) - ‘/etc/yum.repos.d/jenkins.repo’ saved [2383/2383]
+
+[root@poojith-hygeiya ~]# rpm --import http://pkg.jenkins.io/redhat-stable/jenkins.io.key
+error: http://pkg.jenkins.io/redhat-stable/jenkins.io.key: key 1 not an armored public key.
+[root@poojith-hygeiya ~]# export ftp__PROXY=http://web-proxy.in.softwaregrp.net:8080^C
+[root@poojith-hygeiya ~]# wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins.io/redhat-stable/jenkins.repo
+--2019-02-13 03:01:36--  http://pkg.jenkins.io/redhat-stable/jenkins.repo
+Resolving pkg.jenkins.io (pkg.jenkins.io)... 52.202.51.185
+Connecting to pkg.jenkins.io (pkg.jenkins.io)|52.202.51.185|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2383 (2.3K) [text/html]
+Saving to: ‘/etc/yum.repos.d/jenkins.repo’
+
+100%[===================================================================================================================>] 2,383       --.-K/s   in 0s
+
+2019-02-13 03:01:36 (131 MB/s) - ‘/etc/yum.repos.d/jenkins.repo’ saved [2383/2383]
+
+[root@poojith-hygeiya ~]#  rpm --import http://pkg.jenkins.io/redhat-stable/jenkins.io.key
+error: http://pkg.jenkins.io/redhat-stable/jenkins.io.key: key 1 not an armored public key.
+[root@poojith-hygeiya ~]# yum install java-1.8.0-openjdk.x86_64
+Loaded plugins: fastestmirror, langpacks, product-id, search-disabled-repos, subscription-manager
+This system is not registered with an entitlement server. You can use subscription-manager to register.
+
+
+File contains no section headers.
+file: file:///etc/yum.repos.d/jenkins.repo, line: 1
+'<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">\n'
+[root@poojith-hygeiya ~]# rm /etc/yum.repos.d/jenkins.repo
+rm: remove regular file ‘/etc/yum.repos.d/jenkins.repo’? y
+[root@poojith-hygeiya ~]# yum install java-1.8.0-openjdk.x86_64
+Loaded plugins: fastestmirror, langpacks, product-id, search-disabled-repos, subscription-manager
+This system is not registered with an entitlement server. You can use subscription-manager to register.
+Determining fastest mirrors
+csa_epel/x86_64/metalink                                                                                                              |  11 kB  00:00:00
+epel/x86_64/metalink                                                                                                                  |  11 kB  00:00:00
+ * base: centos.excellmedia.net
+ * csa_epel: mirrors.cat.pdx.edu
+ * epel: mirrors.cat.pdx.edu
+ * extras: centos.excellmedia.net
+ * updates: centos.excellmedia.net
+http://mirror.nbrc.ac.in/centos/7.5.1804/os/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://mirror.nbrc.ac.in/centos/7.5.1804/os/x86_64/repodata/repomd.xml: (28, 'Operation too slow. Less than 1000 bytes/sec transferred the last 30 seconds')
+Trying other mirror.
+base                                                                                                                                  | 2.4 kB  00:00:00
+http://centos.mirror.net.in/centos/7.5.1804/os/x86_64/repodata/repomd.xml: [Errno -1] Error importing repomd.xml for base: Damaged repomd.xml file
+Trying other mirror.
+base                                                                                                                                  | 2.4 kB  00:00:00
+http://centos.mirror.snu.edu.in/centos/7.5.1804/os/x86_64/repodata/repomd.xml: [Errno -1] Error importing repomd.xml for base: Damaged repomd.xml file
+Trying other mirror.
+base                                                                                                                                  | 2.3 kB  00:00:00
+http://ftp.iitm.ac.in/centos/7.5.1804/os/x86_64/repodata/repomd.xml: [Errno -1] Error importing repomd.xml for base: Damaged repomd.xml file
+Trying other mirror.
+base                                                                                                                                  | 2.4 kB  00:00:00
+http://centos.excellmedia.net/7.5.1804/os/x86_64/repodata/repomd.xml: [Errno -1] Error importing repomd.xml for base: Damaged repomd.xml file
+Trying other mirror.
+base                                                                                                                                  | 2.4 kB  00:00:00
+http://mirror.xeonbd.com/centos/7.5.1804/os/x86_64/repodata/repomd.xml: [Errno -1] Error importing repomd.xml for base: Damaged repomd.xml file
+Trying other mirror.
+^Chttp://mirror.vbctv.in/centos/7.5.1804/os/x86_64/repodata/repomd.xml: [Errno -1] Error importing repomd.xml for base: Damaged repomd.xml file
+Trying other mirror.
+^Chttp://mirrors.fibergrid.in/centos/7.5.1804/os/x86_64/repodata/repomd.xml: [Errno 14] curl#56 - "Callback aborted"
+Trying other mirror.
+^Chttp://mirrors.estointernet.in/centos/7.5.1804/os/x86_64/repodata/repomd.xml: [Errno 14] curl#56 - "Callback aborted"
+Trying other mirror.
+http://del-repos.extreme-ix.org/centos/7.5.1804/os/x86_64/repodata/repomd.xml: [Errno 14] curl#6 - "Could not resolve host: del-repos.extreme-ix.org; Unknown error"
+Trying other mirror.
+^C
+
+Exiting on user cancel
+^C
+[root@poojith-hygeiya ~]# ^C
+[root@poojith-hygeiya ~]# ^C
+[root@poojith-hygeiya ~]# ^C
+[root@poojith-hygeiya ~]# ^C
+[root@poojith-hygeiya ~]# ^C
+[root@poojith-hygeiya ~]# ^C
+[root@poojith-hygeiya ~]# ^C
+[root@poojith-hygeiya ~]# ^C
+[root@poojith-hygeiya ~]# ^C
+[root@poojith-hygeiya ~]# ^C
+[root@poojith-hygeiya ~]# ^C
+[root@poojith-hygeiya ~]# ^C
+[root@poojith-hygeiya ~]# ^C
+[root@poojith-hygeiya ~]# ^C
+[root@poojith-hygeiya ~]# ^C
+[root@poojith-hygeiya ~]# ^C
+[root@poojith-hygeiya ~]# ^C
+[root@poojith-hygeiya ~]# ^C
+[root@poojith-hygeiya ~]# ^C
+[root@poojith-hygeiya ~]# ^C
+[root@poojith-hygeiya ~]# ^C
+[root@poojith-hygeiya ~]# ^C
+[root@poojith-hygeiya ~]# which java
+/usr/bin/java
+[root@poojith-hygeiya ~]# java --version
+Unrecognized option: --version
+Error: Could not create the Java Virtual Machine.
+Error: A fatal exception has occurred. Program will exit.
+[root@poojith-hygeiya ~]# java -version
+openjdk version "1.8.0_191"
+OpenJDK Runtime Environment (build 1.8.0_191-b12)
+OpenJDK 64-Bit Server VM (build 25.191-b12, mixed mode)
+[root@poojith-hygeiya ~]# wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat-stable/jenkins.repo
+--2019-02-13 03:04:36--  http://pkg.jenkins-ci.org/redhat-stable/jenkins.repo
+Resolving pkg.jenkins-ci.org (pkg.jenkins-ci.org)... 52.202.51.185
+Connecting to pkg.jenkins-ci.org (pkg.jenkins-ci.org)|52.202.51.185|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2403 (2.3K) [text/html]
+Saving to: ‘/etc/yum.repos.d/jenkins.repo’
+
+100%[===================================================================================================================>] 2,403       --.-K/s   in 0s
+
+2019-02-13 03:04:36 (154 MB/s) - ‘/etc/yum.repos.d/jenkins.repo’ saved [2403/2403]
+
+[root@poojith-hygeiya ~]#  rpm –import http://pkg.jenkins-ci.org/redhat-stable/jenkins-ci.org.key
+RPM version 4.11.3
+Copyright (C) 1998-2002 - Red Hat, Inc.
+This program may be freely redistributed under the terms of the GNU GPL
+
+Usage: rpm [-aKfgpqVcdLilsiv?] [-a|--all] [-f|--file] [-g|--group] [-p|--package] [--pkgid] [--hdrid] [--triggeredby] [--whatrequires] [--whatprovides]
+        [--nomanifest] [-c|--configfiles] [-d|--docfiles] [-L|--licensefiles] [--dump] [-l|--list] [--queryformat=QUERYFORMAT] [-s|--state]
+        [--nofiledigest] [--nofiles] [--nodeps] [--noscript] [--allfiles] [--allmatches] [--badreloc] [-e|--erase <package>+] [--excludedocs]
+        [--excludepath=<path>] [--force] [-F|--freshen <packagefile>+] [-h|--hash] [--ignorearch] [--ignoreos] [--ignoresize] [-i|--install] [--justdb]
+        [--nodeps] [--nofiledigest] [--nocontexts] [--noorder] [--noscripts] [--notriggers] [--nocollections] [--oldpackage] [--percent]
+        [--prefix=<dir>] [--relocate=<old>=<new>] [--replacefiles] [--replacepkgs] [--test] [-U|--upgrade <packagefile>+] [--reinstall=<packagefile>+]
+        [-D|--define 'MACRO EXPR'] [--undefine=MACRO] [-E|--eval 'EXPR'] [--macros=<FILE:...>] [--noplugins] [--nodigest] [--nosignature]
+        [--rcfile=<FILE:...>] [-r|--root ROOT] [--dbpath=DIRECTORY] [--querytags] [--showrc] [--quiet] [-v|--verbose] [--version] [-?|--help]
+        [--usage] [--scripts] [--setperms] [--setugids] [--conflicts] [--obsoletes] [--provides] [--requires] [--info] [--changelog] [--xml]
+        [--triggers] [--last] [--dupes] [--filesbypkg] [--fileclass] [--filecolor] [--fscontext] [--fileprovide] [--filerequire] [--filecaps]
+[root@poojith-hygeiya ~]#  rpm –-import http://pkg.jenkins-ci.org/redhat-stable/jenkins-ci.org.key
+RPM version 4.11.3
+Copyright (C) 1998-2002 - Red Hat, Inc.
+This program may be freely redistributed under the terms of the GNU GPL
+
+Usage: rpm [-aKfgpqVcdLilsiv?] [-a|--all] [-f|--file] [-g|--group] [-p|--package] [--pkgid] [--hdrid] [--triggeredby] [--whatrequires] [--whatprovides]
+        [--nomanifest] [-c|--configfiles] [-d|--docfiles] [-L|--licensefiles] [--dump] [-l|--list] [--queryformat=QUERYFORMAT] [-s|--state]
+        [--nofiledigest] [--nofiles] [--nodeps] [--noscript] [--allfiles] [--allmatches] [--badreloc] [-e|--erase <package>+] [--excludedocs]
+        [--excludepath=<path>] [--force] [-F|--freshen <packagefile>+] [-h|--hash] [--ignorearch] [--ignoreos] [--ignoresize] [-i|--install] [--justdb]
+        [--nodeps] [--nofiledigest] [--nocontexts] [--noorder] [--noscripts] [--notriggers] [--nocollections] [--oldpackage] [--percent]
+        [--prefix=<dir>] [--relocate=<old>=<new>] [--replacefiles] [--replacepkgs] [--test] [-U|--upgrade <packagefile>+] [--reinstall=<packagefile>+]
+        [-D|--define 'MACRO EXPR'] [--undefine=MACRO] [-E|--eval 'EXPR'] [--macros=<FILE:...>] [--noplugins] [--nodigest] [--nosignature]
+        [--rcfile=<FILE:...>] [-r|--root ROOT] [--dbpath=DIRECTORY] [--querytags] [--showrc] [--quiet] [-v|--verbose] [--version] [-?|--help]
+        [--usage] [--scripts] [--setperms] [--setugids] [--conflicts] [--obsoletes] [--provides] [--requires] [--info] [--changelog] [--xml]
+        [--triggers] [--last] [--dupes] [--filesbypkg] [--fileclass] [--filecolor] [--fscontext] [--fileprovide] [--filerequire] [--filecaps]
+[root@poojith-hygeiya ~]# rpm --import http://pkg.jenkins-ci.org/redhat-stable/jenkins-ci.org.key
+error: http://pkg.jenkins-ci.org/redhat-stable/jenkins-ci.org.key: key 1 not an armored public key.
+[root@poojith-hygeiya ~]# wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+--2019-02-13 03:06:22--  https://pkg.jenkins.io/redhat-stable/jenkins.repo
+Resolving pkg.jenkins.io (pkg.jenkins.io)... 52.202.51.185
+Connecting to pkg.jenkins.io (pkg.jenkins.io)|52.202.51.185|:443... connected.
+OpenSSL: error:14077419:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert access denied
+Unable to establish SSL connection.
+[root@poojith-hygeiya ~]# wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo^C
+[root@poojith-hygeiya ~]# export http_proxy=http://web-proxy.in.softwaregrp.net:8080
+[root@poojith-hygeiya ~]# export https_proxy=http://web-proxy.in.softwaregrp.net:8080
+[root@poojith-hygeiya ~]# wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+--2019-02-13 03:06:53--  https://pkg.jenkins.io/redhat-stable/jenkins.repo
+Resolving web-proxy.in.softwaregrp.net (web-proxy.in.softwaregrp.net)... 15.122.63.30
+Connecting to web-proxy.in.softwaregrp.net (web-proxy.in.softwaregrp.net)|15.122.63.30|:8080... connected.
+Proxy request sent, awaiting response... 200 OK
+Length: 85
+Saving to: ‘/etc/yum.repos.d/jenkins.repo’
+
+100%[===================================================================================================================>] 85          --.-K/s   in 0s
+
+2019-02-13 03:06:55 (5.94 MB/s) - ‘/etc/yum.repos.d/jenkins.repo’ saved [85/85]
+
+[root@poojith-hygeiya ~]# rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+[root@poojith-hygeiya ~]# yum install jenkins
+Loaded plugins: fastestmirror, langpacks, product-id, search-disabled-repos, subscription-manager
+This system is not registered with an entitlement server. You can use subscription-manager to register.
+Loading mirror speeds from cached hostfile
+csa_epel/x86_64/metalink                                                                                                              |  11 kB  00:00:00
+epel/x86_64/metalink                                                                                                                  |  11 kB  00:00:00
+ * base: centos.excellmedia.net
+ * csa_epel: mirrors.cat.pdx.edu
+ * epel: mirrors.cat.pdx.edu
+ * extras: centos.excellmedia.net
+ * updates: centos.excellmedia.net
+http://mirror.nbrc.ac.in/centos/7.5.1804/os/x86_64/repodata/repomd.xml: [Errno 14] HTTP Error 404 - Not Found
+Trying other mirror.
+To address this issue please refer to the below wiki article
+
+https://wiki.centos.org/yum-errors
+
+If above article doesn't help to resolve this issue please use https://bugs.centos.org/.
+
+http://centos.mirror.net.in/centos/7.5.1804/os/x86_64/repodata/repomd.xml: [Errno 14] HTTP Error 404 - Not Found
+Trying other mirror.
+http://centos.mirror.snu.edu.in/centos/7.5.1804/os/x86_64/repodata/repomd.xml: [Errno 14] HTTP Error 404 - Not Found
+Trying other mirror.
+
+http://ftp.iitm.ac.in/centos/7.5.1804/os/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://ftp.iitm.ac.in/centos/7.5.1804/os/x86_64/repodata/repomd.xml: (28, 'Operation too slow. Less than 1000 bytes/sec transferred the last 30 seconds')
+Trying other mirror.
+
+http://centos.excellmedia.net/7.5.1804/os/x86_64/repodata/repomd.xml: [Errno 14] HTTP Error 404 - Not Found
+Trying other mirror.
+http://mirror.xeonbd.com/centos/7.5.1804/os/x86_64/repodata/repomd.xml: [Errno 14] HTTP Error 404 - Not Found
+Trying other mirror.
+http://mirror.vbctv.in/centos/7.5.1804/os/x86_64/repodata/repomd.xml: [Errno 14] HTTP Error 403 - Forbidden
+Trying other mirror.
+To address this issue please refer to the below wiki article
+
+https://wiki.centos.org/yum-errors
+
+If above article doesn't help to resolve this issue please use https://bugs.centos.org/.
+
+
+http://mirrors.fibergrid.in/centos/7.5.1804/os/x86_64/repodata/repomd.xml: [Errno 14] HTTP Error 503 - Service Unavailable
+Trying other mirror.
+http://mirrors.estointernet.in/centos/7.5.1804/os/x86_64/repodata/repomd.xml: [Errno 14] HTTP Error 404 - Not Found
+Trying other mirror.
+http://del-repos.extreme-ix.org/centos/7.5.1804/os/x86_64/repodata/repomd.xml: [Errno 14] HTTP Error 404 - Not Found
+Trying other mirror.
+csa_epel                                                                                                                              | 4.7 kB  00:00:00
+epel                                                                                                                                  | 4.7 kB  00:00:00
+http://mirror.nbrc.ac.in/centos/7.5.1804/extras/x86_64/repodata/repomd.xml: [Errno 14] HTTP Error 404 - Not Found
+Trying other mirror.
+http://centos.mirror.net.in/centos/7.5.1804/extras/x86_64/repodata/repomd.xml: [Errno 14] HTTP Error 404 - Not Found
+Trying other mirror.
+http://centos.mirror.snu.edu.in/centos/7.5.1804/extras/x86_64/repodata/repomd.xml: [Errno 14] HTTP Error 404 - Not Found
+Trying other mirror.
+http://ftp.iitm.ac.in/centos/7.5.1804/extras/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://ftp.iitm.ac.in/centos/7.5.1804/extras/x86_64/repodata/repomd.xml: (28, 'Operation too slow. Less than 1000 bytes/sec transferred the last 30 seconds')
+Trying other mirror.
+http://centos.excellmedia.net/7.5.1804/extras/x86_64/repodata/repomd.xml: [Errno 14] HTTP Error 404 - Not Found
+Trying other mirror.
+http://mirror.xeonbd.com/centos/7.5.1804/extras/x86_64/repodata/repomd.xml: [Errno 14] HTTP Error 404 - Not Found
+Trying other mirror.
+http://mirror.vbctv.in/centos/7.5.1804/extras/x86_64/repodata/repomd.xml: [Errno 14] HTTP Error 403 - Forbidden
+Trying other mirror.
+http://mirrors.fibergrid.in/centos/7.5.1804/extras/x86_64/repodata/repomd.xml: [Errno 14] HTTP Error 503 - Service Unavailable
+Trying other mirror.
+http://mirrors.estointernet.in/centos/7.5.1804/extras/x86_64/repodata/repomd.xml: [Errno 14] HTTP Error 404 - Not Found
+Trying other mirror.
+http://del-repos.extreme-ix.org/centos/7.5.1804/extras/x86_64/repodata/repomd.xml: [Errno 14] HTTP Error 404 - Not Found
+Trying other mirror.
+jenkins                                                                                                                               | 2.9 kB  00:00:00
+http://mirror.nbrc.ac.in/centos/7.5.1804/updates/x86_64/repodata/repomd.xml: [Errno 14] HTTP Error 404 - Not Found
+Trying other mirror.
+http://centos.mirror.net.in/centos/7.5.1804/updates/x86_64/repodata/repomd.xml: [Errno 14] HTTP Error 404 - Not Found
+Trying other mirror.
+http://centos.mirror.snu.edu.in/centos/7.5.1804/updates/x86_64/repodata/repomd.xml: [Errno 14] HTTP Error 404 - Not Found
+Trying other mirror.
+http://ftp.iitm.ac.in/centos/7.5.1804/updates/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://ftp.iitm.ac.in/centos/7.5.1804/updates/x86_64/repodata/repomd.xml: (28, 'Operation too slow. Less than 1000 bytes/sec transferred the last 30 seconds')
+Trying other mirror.
+http://centos.excellmedia.net/7.5.1804/updates/x86_64/repodata/repomd.xml: [Errno 14] HTTP Error 404 - Not Found
+Trying other mirror.
+http://mirror.xeonbd.com/centos/7.5.1804/updates/x86_64/repodata/repomd.xml: [Errno 14] HTTP Error 404 - Not Found
+Trying other mirror.
+http://mirror.vbctv.in/centos/7.5.1804/updates/x86_64/repodata/repomd.xml: [Errno 14] HTTP Error 403 - Forbidden
+Trying other mirror.
+http://mirrors.fibergrid.in/centos/7.5.1804/updates/x86_64/repodata/repomd.xml: [Errno 14] HTTP Error 503 - Service Unavailable
+Trying other mirror.
+http://mirrors.estointernet.in/centos/7.5.1804/updates/x86_64/repodata/repomd.xml: [Errno 14] HTTP Error 404 - Not Found
+Trying other mirror.
+http://del-repos.extreme-ix.org/centos/7.5.1804/updates/x86_64/repodata/repomd.xml: [Errno 14] HTTP Error 404 - Not Found
+Trying other mirror.
+(1/5): jenkins/primary_db                                                                                                             |  26 kB  00:00:01
+csa_epel/x86_64/primary_db     FAILED                                                                                      ] 159 kB/s | 572 kB  00:01:33 ETA
+https://mirror.umd.edu/fedora/epel/7/x86_64/repodata/a0f54377b5aebf5d1a4ee57a1e7f123c6f17907570889cf27d3df3823c2d5966-primary.sqlite.bz2: [Errno 14] HTTPS Error 404 - Not Found
+Trying other mirror.
+csa_epel/x86_64/primary_db     FAILED                                                                                      ] 539 kB/s | 2.8 MB  00:00:23 ETA
+http://mirror.cogentco.com/pub/linux/epel/7/x86_64/repodata/a0f54377b5aebf5d1a4ee57a1e7f123c6f17907570889cf27d3df3823c2d5966-primary.sqlite.bz2: [Errno 14] HTTP Error 404 - Not Found
+Trying other mirror.
+(2/5): csa_epel/x86_64/updateinfo                                                                                                     | 959 kB  00:00:04
+(3/5): epel/x86_64/updateinfo                                                                                                         | 959 kB  00:00:04
+(4/5): epel/x86_64/primary_db                                                                                                         | 6.6 MB  00:00:04
+(5/5): csa_epel/x86_64/primary_db                                                                                                     | 6.6 MB  00:00:05
+Resolving Dependencies
+--> Running transaction check
+---> Package jenkins.noarch 0:2.150.2-1.1 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+=============================================================================================================================================================
+ Package                             Arch                               Version                                    Repository                           Size
+=============================================================================================================================================================
+Installing:
+ jenkins                             noarch                             2.150.2-1.1                                jenkins                              72 M
+
+Transaction Summary
+=============================================================================================================================================================
+Install  1 Package
+
+Total download size: 72 M
+Installed size: 72 M
+Is this ok [y/d/N]: Exiting on user command
+Your transaction was saved, rerun it with:
+ yum load-transaction /tmp/yum_save_tx.2019-02-13.03-09.0K810G.yumtx
+[root@poojith-hygeiya ~]#
+[root@poojith-hygeiya ~]#
+[root@poojith-hygeiya ~]# sudo systemctl start jenkins.service
+Failed to start jenkins.service: Unit not found.
+[root@poojith-hygeiya ~]# systemctl start jenkins.service
+Failed to start jenkins.service: Unit not found.
+[root@poojith-hygeiya ~]# sudo yum install jenkins
+Loaded plugins: fastestmirror, langpacks, product-id, search-disabled-repos, subscription-manager
+This system is not registered with an entitlement server. You can use subscription-manager to register.
+Loading mirror speeds from cached hostfile
+ * base: centos.excellmedia.net
+ * csa_epel: mirrors.cat.pdx.edu
+ * epel: mirrors.cat.pdx.edu
+ * extras: centos.excellmedia.net
+ * updates: centos.excellmedia.net
+http://mirror.nbrc.ac.in/centos/7.5.1804/os/x86_64/repodata/repomd.xml: [Errno 14] curl#56 - "Recv failure: Connection reset by peer"
+Trying other mirror.
+base                                                                                                                                  | 2.4 kB  00:00:00
+http://centos.mirror.net.in/centos/7.5.1804/os/x86_64/repodata/repomd.xml: [Errno -1] Error importing repomd.xml for base: Damaged repomd.xml file
+Trying other mirror.
+base                                                                                                                                  | 2.4 kB  00:00:00
+http://centos.mirror.snu.edu.in/centos/7.5.1804/os/x86_64/repodata/repomd.xml: [Errno -1] Error importing repomd.xml for base: Damaged repomd.xml file
+Trying other mirror.
+http://ftp.iitm.ac.in/centos/7.5.1804/os/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://ftp.iitm.ac.in/centos/7.5.1804/os/x86_64/repodata/repomd.xml: (28, 'Operation too slow. Less than 1000 bytes/sec transferred the last 30 seconds')
+Trying other mirror.
+base                                                                                                                                  | 2.4 kB  00:00:00
+http://centos.excellmedia.net/7.5.1804/os/x86_64/repodata/repomd.xml: [Errno -1] Error importing repomd.xml for base: Damaged repomd.xml file
+Trying other mirror.
+base                                                                                                                                  | 2.4 kB  00:00:00
+http://mirror.vbctv.in/centos/7.5.1804/os/x86_64/repodata/repomd.xml: [Errno -1] Error importing repomd.xml for base: Damaged repomd.xml file
+Trying other mirror.
+base                                                                                                                                  | 2.4 kB  00:00:00
+http://mirror.xeonbd.com/centos/7.5.1804/os/x86_64/repodata/repomd.xml: [Errno -1] Error importing repomd.xml for base: Damaged repomd.xml file
+Trying other mirror.
+http://mirrors.fibergrid.in/centos/7.5.1804/os/x86_64/repodata/repomd.xml: [Errno 14] curl#56 - "Recv failure: Connection reset by peer"
+Trying other mirror.
+base                                                                                                                                  | 2.4 kB  00:00:00
+http://mirrors.estointernet.in/centos/7.5.1804/os/x86_64/repodata/repomd.xml: [Errno -1] Error importing repomd.xml for base: Damaged repomd.xml file
+Trying other mirror.
+http://del-repos.extreme-ix.org/centos/7.5.1804/os/x86_64/repodata/repomd.xml: [Errno 14] curl#6 - "Could not resolve host: del-repos.extreme-ix.org; Unknown error"
+Trying other mirror.
+http://mirror.nbrc.ac.in/centos/7.5.1804/extras/x86_64/repodata/repomd.xml: [Errno 14] curl#56 - "Recv failure: Connection reset by peer"
+Trying other mirror.
+extras                                                                                                                                | 2.4 kB  00:00:00
+http://centos.mirror.net.in/centos/7.5.1804/extras/x86_64/repodata/repomd.xml: [Errno -1] Error importing repomd.xml for extras: Damaged repomd.xml file
+Trying other mirror.
+extras                                                                                                                                | 2.4 kB  00:00:00
+http://centos.mirror.snu.edu.in/centos/7.5.1804/extras/x86_64/repodata/repomd.xml: [Errno -1] Error importing repomd.xml for extras: Damaged repomd.xml file
+Trying other mirror.
+http://ftp.iitm.ac.in/centos/7.5.1804/extras/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://ftp.iitm.ac.in/centos/7.5.1804/extras/x86_64/repodata/repomd.xml: (28, 'Operation too slow. Less than 1000 bytes/sec transferred the last 30 seconds')
+Trying other mirror.
+extras                                                                                                                                | 2.4 kB  00:00:00
+http://centos.excellmedia.net/7.5.1804/extras/x86_64/repodata/repomd.xml: [Errno -1] Error importing repomd.xml for extras: Damaged repomd.xml file
+Trying other mirror.
+extras                                                                                                                                | 2.4 kB  00:00:00
+http://mirror.vbctv.in/centos/7.5.1804/extras/x86_64/repodata/repomd.xml: [Errno -1] Error importing repomd.xml for extras: Damaged repomd.xml file
+Trying other mirror.
+extras                                                                                                                                | 2.4 kB  00:00:00
+http://mirror.xeonbd.com/centos/7.5.1804/extras/x86_64/repodata/repomd.xml: [Errno -1] Error importing repomd.xml for extras: Damaged repomd.xml file
+Trying other mirror.
+http://mirrors.fibergrid.in/centos/7.5.1804/extras/x86_64/repodata/repomd.xml: [Errno 14] curl#56 - "Recv failure: Connection reset by peer"
+Trying other mirror.
+extras                                                                                                                                | 2.4 kB  00:00:00
+http://mirrors.estointernet.in/centos/7.5.1804/extras/x86_64/repodata/repomd.xml: [Errno -1] Error importing repomd.xml for extras: Damaged repomd.xml file
+Trying other mirror.
+http://del-repos.extreme-ix.org/centos/7.5.1804/extras/x86_64/repodata/repomd.xml: [Errno 14] curl#6 - "Could not resolve host: del-repos.extreme-ix.org; Unknown error"
+Trying other mirror.
+^Z
+[1]+  Stopped                 sudo yum install jenkins
+[root@poojith-hygeiya ~]# jenkins
+bash: jenkins: command not found...
+[root@poojith-hygeiya ~]# whereis jenkins
+jenkins:[root@poojith-hygeiya ~]# start jenkins'
+> exit
+> exit()
+> ^C
+[root@poojith-hygeiya ~]# ^C
+[root@poojith-hygeiya ~]# sudo systemctl start jenkins.service
+Failed to start jenkins.service: Unit not found.
+[root@poojith-hygeiya ~]# sudo systemctl start jenkins.service
+Failed to start jenkins.service: Unit not found.
+[root@poojith-hygeiya ~]# cd jenkins
+-bash: cd: jenkins: No such file or directory
+[root@poojith-hygeiya ~]# sudo systemctl status jenkins.service
+Unit jenkins.service could not be found.
+[root@poojith-hygeiya ~]# sudo systemctl restart jenkins.service
+Failed to restart jenkins.service: Unit not found.
+[root@poojith-hygeiya ~]# http://localhost:8080
+-bash: http://localhost:8080: No such file or directory
+[root@poojith-hygeiya ~]#
+
+poojith-hygeiya.hpeswlab.net
+root
+2the#moon
